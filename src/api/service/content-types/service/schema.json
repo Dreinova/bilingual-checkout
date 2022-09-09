@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "time_in_days": {
+      "type": "biginteger",
+      "min": "1"
+    },
+    "price": {
+      "type": "string"
+    },
+    "discount_code": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::discount-code.discount-code",
+      "inversedBy": "services"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "pattern_bg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "titles_color_1": {
+      "type": "string"
+    },
+    "titles_color_2": {
+      "type": "string"
+    },
+    "pay_column_color": {
+      "type": "string"
+    }
+  }
+}

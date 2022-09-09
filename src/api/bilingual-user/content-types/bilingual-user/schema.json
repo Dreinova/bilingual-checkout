@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bilingual_users",
+  "info": {
+    "singularName": "bilingual-user",
+    "pluralName": "bilingual-users",
+    "displayName": "Bilingual-User"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "state": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}
